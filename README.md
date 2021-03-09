@@ -2,13 +2,15 @@
 
 ## Learning to Code
 
-1. Let students explore the [trinket.io](https://trinket.io) intro to coding. It is web-based, with nothing to install. Low floor: no prior coding experience needed. Students edit existing code and see how the output changes. 
+Let students explore the [trinket.io](https://trinket.io) intro to coding. It is web-based, with nothing to install. Low floor: no prior coding experience needed. Students edit existing code and see how the output changes. 
   - [A Visual Introduction to Python on Trinket.io](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code)
-2. Let students choose which culminating activity they want to code. This is the only thing that I grade. Serves as a formative assessment for the coding. 
+Let students choose which culminating activity they want to code. Of the entire introduction to python, this is the only thing that I would consider grading. I use it as a formative assessment for the coding. If students seem to grasp it, we move om. If not, maybe we need to spend more time with the basics.  
   - [Open-ended Exercise with turtles](https://hourofpython.trinket.io/a-visual-introduction-to-python#/put-it-all-together/pick-an-open-ended-exercise)
-3. Students will probably need a little more to get going before they create programs from scratch. Trinket offers more tutorials as well as some awesome string challenges. 
+That being said, students will probably need some more basic skills before they create programs from scratch. Trinket offers more tutorials.  
   - [Python Basics](https://docs.trinket.io/getting-started-with-python#/welcome/where-we-ll-go)
   - [Challenges](https://hourofpython.com/#string-challenges)
+
+For future projects students can use either [trinket.io](https://trinket.io) or [Google Colabortory (Colab)](https://youtu.be/xoo4mTujM1U). Trinket is great because the interface is clean, you can output cool drawings using the turtle module, but it is only free for python 2. Google Colab is cool because it integrates with google drive. It is built on the Jupyter Notebook and designed for data science applications.
 
 ## Coding Activities
 - [Collatz Conjecture](coding-activities/Collatz-Conjecture.md)
