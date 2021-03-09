@@ -1,6 +1,6 @@
 # Coding-in-Math-Class
 
-##Learning to Code
+## Learning to Code
 
 1. Let students explore the [trinket.io](https://trinket.io) intro to coding. It is web-based, with nothing to install. Low floor: no prior coding experience needed. Students edit existing code and see how the output changes. 
   - [A Visual Introduction to Python on Trinket.io](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code)
@@ -10,9 +10,9 @@
   - [Python Basics](https://docs.trinket.io/getting-started-with-python#/welcome/where-we-ll-go)
   - [Challenges](https://hourofpython.com/#string-challenges)
 
-##Coding Activities
-- [Collatz Conjecture](Collatz-Conjecture.md)
-- [Gaussian Addition](Gaussian-Addition.md) (aka Sum of Integers)
+## Coding Activities
+- [Collatz Conjecture](coding-activities/Collatz-Conjecture.md)
+- [Gaussian Addition (aka Sum of Integers)](coding-activities/Gaussian-Addition.md)
 - Sieve of Eratosthenes
 - Spirolateral Math Doodles
 - Exponential Decay
