@@ -11,7 +11,7 @@
   - [Challenges](https://hourofpython.com/#string-challenges)
 
 ##Coding Activities
-- [Collatz Conjecture](Collatz Conjecture.md)
+- [Collatz Conjecture](Collatz-Conjecture.md)
 - Gaussian Addition (aka Sum of Integers)
 - Sieve of Eratosthenes
 - Spirolateral Math Doodles
