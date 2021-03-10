@@ -17,6 +17,6 @@ For future projects students can use either [trinket.io](https://trinket.io) or 
 ## Coding Activities
 - [Collatz Conjecture](coding-activities/Collatz-Conjecture.md)
 - [Gaussian Addition (aka Sum of Integers)](coding-activities/Gaussian-Addition.md)
-- [Sieve of Eratosthenes](Sieve-of-Eratosthenes.md)
-- [Spirolateral Math Doodles](Spirolateral-Math-Doodles.md)
-- [Exponential Decay](Exponential-Decay.md)
+- [Sieve of Eratosthenes](coding-activities/Sieve-of-Eratosthenes.md)
+- [Spirolateral Math Doodles](coding-activities/Spirolateral-Math-Doodles.md)
+- [Exponential Decay](coding-activities/Exponential-Decay.md)
