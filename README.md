@@ -1,9 +1,9 @@
 # Coding-in-Math-Class
-This repository is designed to help math teachers bring coding using the python computer programming language into their classrooms. Even if you as the teacher have zero coding experience, you can go through the introduction below with students and learn together. I owe a lot of my own coding knowledge to kind strangers on the internet. This is an attempt to pay it forward. I am also more than happy to help however I can. 
+This repository is designed to help math teachers bring coding into their classrooms. Even if you as the teacher have zero coding experience, you can go through the introduction below with students and learn together. I owe a lot of my own coding knowledge to kind strangers on the internet. This is an attempt to pay it forward. I am also more than happy to help however I can. 
 
-Given that I teach at a middle school, most of the activities are geared towards 8th grade. However, they can be adjusted for a wide range of grades.
+Given that I teach at a middle school, most of the activities are geared towards 8th grade CCSS. However, they can be adjusted for a wide range of grades. If you have questions, or ideas for new lessons email me <rhelmstedter@gmail.com> or find me on twitter [@RHelmstedter](https://twitter.com/RHelmstedter).
 
-## Learning to Code
+## Learning to Code in Python
 
 Let students explore the [trinket.io](https://trinket.io) intro to coding. It is web-based, with nothing to download or install. As with all great resources it has a low floor and a high ceiling. Students do not need prior coding experience. They only have to edit existing code and see how the output changes.
 - [A Visual Introduction to Python on Trinket.io](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code)
@@ -25,6 +25,8 @@ That being said, students will probably need some more skills before they create
 Since my students are all on Chromebooks, all future projects use either [trinket.io](https://trinket.io) or [Google Colabortory (Colab)](https://youtu.be/xoo4mTujM1U). Trinket is great because the interface is intuitive, students will already be familiar with it from the intro, and you can output cool drawings using the turtle module. Unfortunately, it is only free for python 2 which has been sunsetted as of January 2020. While you can still use it, it is not longer being supported. Google Colab is a great (read: free, and still with nothing to download or install!) alternative because it integrates with google drive. It is built on the open-sourced Jupyter Notebook and designed for data science applications.
 
 ## Coding Activities
+Below is a collection of activities and other resources that can be used in the math classroom. All programs are written in python and executable in either google colab or trinket.
+
 - [Collatz Conjecture](coding-activities/Collatz-Conjecture.md)
 - [Gaussian Addition (aka Sum of Integers)](coding-activities/Gaussian-Addition.md)
 - [Sieve of Eratosthenes](coding-activities/Sieve-of-Eratosthenes.md)
