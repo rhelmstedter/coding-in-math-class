@@ -4,7 +4,7 @@
 2. After students get tired of calculating by hand (and they will) suggest writing a program that does the work for them. As an added bonus, with python handling the arithmetic, students free up brain power to explore other awesome questions. E.g., which numbers lead to longer sequences? Which numbers lead to shorter sequences? What happens if you start with a negative? Does this work with decimals?
     - [Teach modular arithmetic](https://youtu.be/5OjZWSdxlU0) (to test if a number is even)
     - [Sample program in Trinket](https://trinket.io/python/37fae0a0f9)
-    - [Sample program in Colab ](https://colab.research.google.com/drive/1KM3fXUNxg_KuiYvTGVckDt_MU3yzQGk4?usp=sharing)
+    - [Sample program in Colab ](collatz-sequence.ipynb)
  
 3. Talk about the Collatz conjecture. Share that it is still an open problem worth $1 million and no one knows how to prove it. This can lead to a great discussion on what does it mean to *prove* things and why that matters in math. Share the Numberphile video below that shows how artists have created a visual representation of the sequence. (I recommend starting the video at 2:12.) There is also a PDF that can be printed and shared with students that they can color. Finally, I show the YouTube video *Visualizing Collatz*. It is an artistic response to the Numberphile video. There is also a handy blog that contains all of the Numberphile resources on the Collatz Conjecture. 
     - [Collatz Conjecture in Color - Numberphile](https://www.youtube.com/watch?v=LqKpkdRRLZw)
