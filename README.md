@@ -11,9 +11,6 @@ Let students explore the [trinket.io](https://trinket.io) intro to coding. It is
 
 After a series of small challenges, students get to choose their own culminating activity. Of the entire introduction to python, this is the only thing that I would consider grading. I use it as a formative assessment for the coding. If students seem to grasp it, we move on. If not, we spend a little more time with the basics.
 
-- [Open-ended Exercise with turtles](https://hourofpython.trinket.io/a-visual-introduction-to-python#/put-it-all-together/pick-an-open-ended-exercise)
-
-
 That being said, students will probably need some more skills before they create programs from scratch. Trinket offers more tutorials. I also recommend checking out the other resources below to take your coding to the next level.
 
 - [Python Basics](https://docs.trinket.io/getting-started-with-python#/welcome/where-we-ll-go)
