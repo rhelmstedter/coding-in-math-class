@@ -17,6 +17,7 @@ for flip in range(FLIPS):
     
 print("Number of heads: " + str(heads))
 print("Number of tails: " + str(tails))
+
 ```
 
 After a couple clarifying questions turns out she was trying to recreate this statistics activity.
