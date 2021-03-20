@@ -5,5 +5,5 @@
     - [Prime Numbers - Mathigon](https://mathigon.org/course/divisibility/primes)
 
 3. Ask students to recreate the Sieve of Eratosthenes using python. (This problem was suggested by u/shoombabi on Reddit.) 
-    - [Sample code using Colab](https://colab.research.google.com/drive/1nh8lHpB1xaiI20v2JWKDXhlM2ATYLsB9?usp=sharing)
+    - [Sample code using Colab](Sieve_of_Eratosthenes.ipynb)
 
