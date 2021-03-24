@@ -6,6 +6,10 @@ Why not build exploding dots machines using python! Essentially, exploding dots 
 
 - [Sample program in colab](exploding_dots.ipynb)
 
+Here is the code in action.
+
+![edgif](coding-activities/explodingdots.gif)
+
 James Tanton has a ton of other great resources to checkout.
 - [G'day Math](https://gdaymath.com)
 - [Thinking Mathematics](http://www.jamestanton.com)
