@@ -8,7 +8,7 @@ Why not build exploding dots machines using python! Essentially, exploding dots 
 
 Here is the code in action.
 
-![edgif](coding-activities/explodingdots.gif)
+![edgif](explodingdots.gif)
 
 James Tanton has a ton of other great resources to checkout.
 - [G'day Math](https://gdaymath.com)
