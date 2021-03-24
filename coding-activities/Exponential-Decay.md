@@ -23,7 +23,7 @@ print("Number of tails: " + str(tails))
 After a couple clarifying questions turns out she was trying to recreate this statistics activity.
 ![stats-activity](stats-activity.png)
 
-No worries, python can handle that easily! So I created a program in google colab that allows mimics the experiment. Then she asked for the ability to see the outcomes of multiple experiments. I added a second cell where the user can enter the number of times they would like to run the experiment it will construct a graph for each one. By letting python handle the calculations and graphing you can free up your mind for more interesting questions like, why does it make sense that this represents exponential decay? If you start with 256 coins, how many trials do you expect there to be in each experiment?
+No worries, python can handle that easily! So I created a program in Google Colab that allows mimics the experiment. Then she asked for the ability to see the outcomes of multiple experiments. I added a second cell where the user can enter the number of times they would like to run the experiment it will construct a graph for each one. By letting python handle the calculations and graphing you can free up your mind for more interesting questions like, why does it make sense that this represents exponential decay? If you start with 256 coins, how many trials do you expect there to be in each experiment?
 
   - [Modeling Exponential Decay with Coin Flips](ModelingExponentialDecay.ipynb)
 
