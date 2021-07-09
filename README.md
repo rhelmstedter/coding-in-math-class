@@ -31,3 +31,4 @@ Below is a collection of activities and other resources that can be used in the 
 * [Exponential Decay](coding-activities/Exponential-Decay.md)
 * [Exploding Dots](coding-activities/Exploding-Dots.md)
 * [Data Visualization with Kaggle](coding-activities/data-vis-kaggle.md)
+* [Order of Operations](/coding-activities/order-of-operations.md)
