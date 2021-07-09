@@ -30,3 +30,4 @@ Below is a collection of activities and other resources that can be used in the 
 * [Spirolateral Math Doodles](coding-activities/Spirolateral-Math-Doodles.md)
 * [Exponential Decay](coding-activities/Exponential-Decay.md)
 * [Exploding Dots](coding-activities/Exploding-Dots.md)
+* [Data Visualization with Kaggle](coding-activities/data-vis-kaggle.md)
