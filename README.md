@@ -32,3 +32,4 @@ Below is a collection of activities and other resources that can be used in the 
 * [Exploding Dots](coding-activities/Exploding-Dots.md)
 * [Data Visualization with Kaggle](coding-activities/data-vis-kaggle.md)
 * [Order of Operations](/coding-activities/order-of-operations.md)
+* [Guess My Number Games](/coding-activities/guess-my-number-games.md)
