@@ -7,11 +7,12 @@ TRIALS: int = 10000
 
 
 def simulate(n):
-    rolls= []
+    rolls = []
     for trial in range(n):
-        roll = randint(1,6) + randint(1,6)
-        rolls.append(roll)
+        trial = randint(1, 6) + randint(1, 6)
+        rolls.append(trial)
     return rolls
+
 
 def plot(counts):
     pyplot.title(f"{TRIALS} Pairs of 6-sided Dice")
@@ -20,7 +21,9 @@ def plot(counts):
     pyplot.bar(counts.keys(), counts.values())
     pyplot.show()
 
+
 results = simulate(TRIALS)
 counts = Counter(results)
-print(counts)
+print("(sum, count)")
+print(sorted(counts.items()))
 plot(counts)
