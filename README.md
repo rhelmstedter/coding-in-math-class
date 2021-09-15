@@ -18,6 +18,7 @@ That being said, students will probably need some more skills before they create
 * [Challenges](https://hourofpython.com/#string-challenges)
 * [Automate the Boring Stuff with Python — Al Sweigart](https://automatetheboringstuff.com/)
 * [Corey Schafer's YouTube Channel](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g)
+* [Pybites Platform](https://codechalleng.es/)
 
 
 Since my students are all on Chromebooks, all future projects will use either [trinket.io](https://trinket.io), [replit](https://replit.com/), or [Google Colabortory (Colab)](https://youtu.be/xoo4mTujM1U). Trinket is great because the interface is intuitive, students will already be familiar with it from the intro, and you can output cool drawings using the turtle module. Unfortunately, it is only free for python 2 which has been sunsetted as of January 2020. While you can still use it, it is not longer being supported. Replit seems to be a great choice since it offers more flexiblity than Trinket and is more powerful. Google Colab is a great (read: free, and still with nothing to download or install!) alternative because it integrates with Google Drive. It is built on the open-sourced Jupyter Notebook and designed for data science applications.
