@@ -31,6 +31,7 @@ Below is a collection of activities and other resources that can be used in the 
 ### Math 8 CCSS
 
 * [Gaussian Addition (aka Sum of Integers)](coding-activities/Gaussian-Addition.md)
+* [Silent Board Game](coding-activities/silent-board-game.md)
 
 ### Math 7 CCSS
 
