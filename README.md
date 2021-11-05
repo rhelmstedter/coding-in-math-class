@@ -32,6 +32,7 @@ Below is a collection of activities and other resources that can be used in the 
 
 * [Gaussian Addition (aka Sum of Integers)](coding-activities/Gaussian-Addition.md)
 * [Silent Board Game](coding-activities/silent-board-game.md)
+* [String Art](coding-activities/string-art.md)
 
 ### Math 7 CCSS
 
