@@ -6,4 +6,4 @@ This is based on the CPM Silent Board Game in Chapter 3 of CC3. Students get an 
 
 In this case the algebraic rule would be ![equation](https://latex.codecogs.com/svg.image?y=3x&plus;1). After figureing out the rule, students fired up replit, stored the inputs in a list, and created a function that has a parameter of `x`, and returns the calculation `3*x+1`. Then, using a for loop, iterated over the inputs and displayed a completed table.
 
-[Replit Example](https://replit.com/@MrHelmstedter/silentboardgame#main.py)
+* [Replit Example](https://replit.com/@MrHelmstedter/silentboardgame#main.py)

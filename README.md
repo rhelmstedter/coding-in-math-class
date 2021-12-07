@@ -21,11 +21,11 @@ That being said, students will probably need some more skills before they create
 * [Pybites Platform](https://codechalleng.es/)
 
 
-Since my students are all on Chromebooks, all future projects will use either [trinket.io](https://trinket.io), [replit](https://replit.com/), or [Google Colabortory (Colab)](https://youtu.be/xoo4mTujM1U). Trinket is great because the interface is intuitive, students will already be familiar with it from the intro, and you can output cool drawings using the turtle module. Unfortunately, it is only free for python 2 which has been sunsetted as of January 2020. While you can still use it, it is not longer being supported. Replit seems to be a great choice since it offers more flexiblity than Trinket and is more powerful. Google Colab is a great (read: free, and still with nothing to download or install!) alternative because it integrates with Google Drive. It is built on the open-sourced Jupyter Notebook and designed for data science applications.
+Since my students are all on Chromebooks, all future projects will use either [trinket.io](https://trinket.io), [replit](https://replit.com/), or ~~[Google Colaboratory (Colab)](https://youtu.be/xoo4mTujM1U)~~. Trinket is great because the interface is intuitive, students will already be familiar with it from the intro, and you can output cool drawings using the turtle module. Unfortunately, it is only free for python 2 which has been sunsetted as of January 2020. While you can still use it, it is no longer being supported. Replit seems to be a great choice since it offers more flexibility than Trinket and is more powerful. ~~Google Colab is a great (read: free, and still with nothing to download or install!) alternative because it integrates with Google Drive. It is built on the open-sourced Jupyter Notebook and designed for data science applications.~~ So, I no longer use Google Colab for two reasons. 1) Google changed the age limit to over 18. This means none of my students can access it. 2) Colab, as an app, is now controlled by the District and turned off for me. So, I have literally lost access to all my data and notebooks for my work email account.
 
 ## Coding Activities
 
-Below is a collection of activities and other resources that can be used in the math classroom. All programs are written in python and executable in either Google Colab or trinket.
+Below is a collection of activities and other resources that can be used in the math classroom. All programs are written in python and executable in either Replit, ~~Google Colab~~ or trinket.
 
 
 ### Math 8 CCSS
@@ -34,6 +34,7 @@ Below is a collection of activities and other resources that can be used in the 
 * [Silent Board Game](coding-activities/silent-board-game.md)
 * [String Art](coding-activities/string-art.md)
 * [Triangle and Square numbers](coding-activities/triangle_and_square_numbers.md)
+ 
 ### Math 7 CCSS
 
 * [Dice Sumulation](coding-activities/dice_simulation.md)
