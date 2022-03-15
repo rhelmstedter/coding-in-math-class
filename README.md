@@ -53,5 +53,5 @@ Below is a collection of activities and other resources that can be used in the 
 ### Data Science
 
 * [Data Visualization with Kaggle](coding-activities/data-vis-kaggle.md)
-* [Simple Pie Chart](coding-activities/pie_chart.md)
+* [Simple Pie Chart](coding-activities/simple_pie_chart.md)
 
