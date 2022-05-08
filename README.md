@@ -14,8 +14,8 @@ After a series of small challenges, students get to choose their own culminating
 
 That being said, students will probably need some more skills before they create programs from scratch. Trinket offers more tutorials. I also recommend checking out the other resources below to take your coding to the next level.
 
-* [Python Basics](https://docs.trinket.io/getting-started-with-python#/welcome/where-we-ll-go)
-* [Challenges](https://hourofpython.com/#string-challenges)
+* [Trinket: Python Basics](https://docs.trinket.io/getting-started-with-python#/welcome/where-we-ll-go)
+* [Trinket: Challenges](https://hourofpython.com/#string-challenges)
 * [Automate the Boring Stuff with Python — Al Sweigart](https://automatetheboringstuff.com/)
 * [Corey Schafer's YouTube Channel](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g)
 * [Pybites Platform](https://codechalleng.es/)
