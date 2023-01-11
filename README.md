@@ -41,6 +41,7 @@ Below is a collection of activities and other resources that can be used in the 
 * [Order of Operations](/coding-activities/order-of-operations.md)
 * [Guess My Number Games](/coding-activities/guess-my-number-games.md)
 * [Experimental Probability](/coding-activities/experimental-probability.md)
+* [DnD Advantage](./coding-activities/dnd_advantage.md)
 
 ### Recreational Math
 
