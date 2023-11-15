@@ -35,5 +35,6 @@ Now that students have explored, talk about the Collatz conjecture. The conjectu
 
 Extension
    - Project Euler is a collection of math problems designed to be solved with code. It is language agnostic, so you so can solve the problems using whatever language you would like. The Project Euler problem 14 on the website deals with the Collatz Conjecture. [Longest Collatz Sequence](https://projecteuler.net/problem=14)
+   - [Visualize](./visualize_collatz.py)
 
 
