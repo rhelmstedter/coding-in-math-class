@@ -1,4 +1,4 @@
-# Data Visualization with Kaggle
+#+title: Data Visualization with Kaggle
 
 When I first heard about [[https://www.kaggle.com][Kaggle]], I thought it was just a collection of data sets. Which is already pretty cool. However, after listening to [[https://talkpython.fm/episodes/show/322/a-path-into-data-science][Talk Python's]] excellent interview with Sanyam Bhutani I learned that there is a whole competition component where any one can try to solve problems using code. Which is also really cool. But then after exploring the site, it turns out there are built in lessons as well! AMAZING.
 
