@@ -1,9 +1,11 @@
 
 def square_number(n):
+    """Return the nth square number."""
     return n ** 2
 
 
 def triangle_number(n):
+    """Return the nth triangle number."""
     return n * (n + 1) // 2
 
 

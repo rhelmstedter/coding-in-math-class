@@ -1,14 +1,14 @@
-# Guess My Number Games
+#+title: Guess My Number Games
 
-This is a little gem from [CPM](https://www.cpm.org). It starts with a simple premise, students are given a set of arithmetic directions and students have to figure out the mystery number. For example, if I triple my number and add 4 I get 19. Students can use whatever algorithm makes sense to them as they figure it out. Here are some more examples.
+This is a little gem from [[https://www.cpm.org][CPM]]. It starts with a simple premise, students are given a set of arithmetic directions and students have to figure out the mystery number. For example, if I triple my number and add 4 I get 19. Students can use whatever algorithm makes sense to them as they figure it out. Here are some more examples.
 
-![screenshot](guessmynumbergames.png)
+[[file:guessmynumbergames.png][screenshot]]
 
 The beauty of this activity lies in the fact that the formal algebra has been stripped away (momentarily) leaving space for students to make sense of and reason out the relationships on their own. Typically, I start these as a whole class with no one being allowed to speak out loud. After some independent work time (generally mental math, but I do encourage students to use paper if they want) we do a little countdown and shout out the answer all together. It makes for a great introduction to solving equations in math 7 and is even better in math 8 when we talk about number of solutions to an equation. Generally I will build some confidence with the entire class shouting out the same number with some simple games, and then watch the ensuing chaos when we try a game with multiple solutions and everyone shouts out a different number.
 
 While I will probably do that again this year, I will also include a coding component. Below is a simple program that represents the game "When I triple my number and add five, I get eleven." In less than 10 lines of code we can create an interactive game that builds conceptual understanding of solving equations.
 
-```python
+#+begin_src python
 while True:
     num = int(input("What is my number? "))
     result = 11
@@ -18,8 +18,9 @@ while True:
         break
     else: 
         print("That's not my number. Try again."
-```
+#+end_src
 
 Here it is in action in a google colab notebook.
 
-![gif](guessmynumber.gif)
+#+CAPTION: Guess my number game
+[[./guessmynumber.gif]]
