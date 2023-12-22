@@ -1,12 +1,19 @@
 import turtle
 
-def string_art(x, y, size, quad, color):
+
+def string_art(x: int, y: int, size: int, quad: int, color: str) -> None:
+    """Generate string art.
+
+    Returns:
+
+
+    """
     turtle.penup()
-    turtle.goto(x,y)
+    turtle.goto(x, y)
     turtle.color(color)
     width = 10
     height = size
-    lines = height//10
+    lines = height // 10
 
     if quad == 2:
         width = -width
@@ -20,10 +27,10 @@ def string_art(x, y, size, quad, color):
 
     for _ in range(lines):
         turtle.penup()
-        turtle.goto(x ,height + y)
+        turtle.goto(x, height + y)
         turtle.pendown()
         turtle.goto(width + x, y)
-        turtle.goto(x ,height + y)
+        turtle.goto(x, height + y)
 
         if quad == 2:
             width -= 10
@@ -41,16 +48,19 @@ def string_art(x, y, size, quad, color):
             width += 10
             height -= 10
 
+
+
+
+
 turtle.speed(0)
 
-for x in range (-200, 300, 100):
-    for y in range (-200, 300, 100):
+for x in range(-200, 300, 100):
+    for y in range(-200, 300, 100):
         for quad in range(1, 5):
             color = "#A5ACAF"
-            if not x %200:
-                color = '#3385ff'
+            if not x % 200:
+                color = "#3385ff"
             string_art(x, y, 100, quad, color)
 
 turtle.ht()
 turtle.exitonclick()
-

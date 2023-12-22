@@ -1,6 +1,8 @@
-"""In Dungeons and Dragons, a player can gain an advantage by rolling two dice
-simultaneously and choosing the higher value. What is the new expected value for an
-n-sided die when rolling with an advantage?
+"""Calc the advantage.
+
+In Dungeons and Dragons, a player can gain an advantage by rolling two dice
+simultaneously and choosing the higher value. What is the new expected value
+for an n-sided die when rolling with an advantage?
 """
 
 from itertools import product
