@@ -9,18 +9,21 @@ Introduce the connection between images and algebra using the [[https://www.youc
 
 This function below starts with the variable total set to zero. Then for each figure starting from zero to figure_number it sets total to its current value plus the figure number. This has the effect of adding consecutive integers.
 
-#+begin_src python
-def gauss_add(figure_number):
+#+begin_src python :results output :exports both :tangle gaussian_addition.py
+def gaussian_addition(figure_number: int) -> None:
     total = 0
-    for num in range (int(figure_number)+1):
-        total = total + num
-    print (f'The sum of integers from 0 to {figure_number} is {total}.')
+    for num in range(int(figure_number) + 1):
+        total += num
+    print(f"The sum of integers from 0 to {figure_number} is {total}.")
+
+
+gaussian_addition(100)
 #+end_src
 
-So if you want to know the sum of integers up to 100, call the function with 100 as the argument like this: `guass_add(100)`. The output of the program will be "The sum of integers from 1 to 100 is 5050."
+#+RESULTS:
+: The sum of integers from 0 to 100 is 5050.
 
-- [[https://trinket.io/python/564712f6a5][Sample code using trinket]]
- 
-Now that we have an awesome recursive method, let’s explore the explicit. Kalid Azad from [[https://betterexplained.com/][betterexplained.com]] has a fantastic article on this: [[https://betterexplained.com/articles/techniques-for-adding-the-numbers-1-to-100/][Techniques for Adding the Numbers 1 to 100]]. In the past, I have turned this article into a mini-lecture that includes the story of when Gauss was a child and his teacher asked the kids to add up all the numbers from 1 to 100 so he could nap. Hence, the name, Gaussian addition. Kids are usually amazed to see the connections between the formula, and the original pattern. I usually end by introducing sigma notation just for fun and maybe blow some 8th grade minds.
+
+Now that we have an awesome brute force method, let’s explore the explicit. Kalid Azad from [[https://betterexplained.com/][betterexplained.com]] has a fantastic article on this: [[https://betterexplained.com/articles/techniques-for-adding-the-numbers-1-to-100/][Techniques for Adding the Numbers 1 to 100]]. In the past, I have turned this article into a mini-lecture that includes the story of when Gauss was a child and his teacher asked the kids to add up all the numbers from 1 to 100 so he could nap. Hence, the name, Gaussian addition. Kids are usually amazed to see the connections between the formula, and the original pattern. I usually end by introducing sigma notation just for fun and maybe blow some 8th grade minds.
 
  - [[file:sigma-notation.png][sigma notation]]

@@ -49,9 +49,6 @@ def string_art(x: int, y: int, size: int, quad: int, color: str) -> None:
             height -= 10
 
 
-
-
-
 turtle.speed(0)
 
 for x in range(-200, 300, 100):

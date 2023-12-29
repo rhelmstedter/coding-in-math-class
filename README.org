@@ -31,7 +31,6 @@ That being said, students will probably need some more skills before they create
 
 Below is a collection of activities and other resources that can be used in the math classroom. All programs are written in python and executable in either Replit, Google Colab or trinket.
 
-
 ** Math 8 CCSS
 
 + [[file:coding-activities/Gaussian-Addition.org][Gaussian Addition]]
