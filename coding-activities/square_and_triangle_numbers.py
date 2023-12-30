@@ -1,4 +1,3 @@
-
 def square_number(n):
     """Return the nth square number."""
     return n ** 2

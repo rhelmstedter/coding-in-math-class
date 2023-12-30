@@ -5,3 +5,36 @@ I stumbled across a nice set of puzzles from [[https://mathigon.org/puzzles][Mat
 After posting my solution on [[https://twitter.com/RHelmstedter/status/1467626314974707717][Twitter]], I decided to port it to Lua to get some experience in another language. I realized my initial solution was storing the triangular numbers in a list for no reason. This has some serious implications for the power of reflection on one's work.
 
 + [[file:square_and_triangle.py][Python example]]
+
+#+begin_src python :results output :tangle ./square_and_triangle_numbers.py
+
+def square_number(n):
+    """Return the nth square number."""
+    return n ** 2
+
+
+def triangle_number(n):
+    """Return the nth triangle number."""
+    return n * (n + 1) // 2
+
+
+squares = []
+both = []
+n = 1
+
+while len(both) < 3:
+    nth_square = square_number(n)
+    nth_triangle = triangle_number(n)
+
+    squares.append(nth_square)
+
+    # triangle numbers grow more slowly than squares
+    if nth_triangle in squares:
+        both.append(nth_triangle)
+    n += 1
+
+print(both)
+#+end_src
+
+#+RESULTS:
+: [1, 36, 1225]
