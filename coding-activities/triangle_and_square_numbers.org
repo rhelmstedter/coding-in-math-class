@@ -6,7 +6,7 @@ After posting my solution on [[https://twitter.com/RHelmstedter/status/146762631
 
 + [[file:square_and_triangle.py][Python example]]
 
-#+begin_src python :results output :tangle ./square_and_triangle_numbers.py
+#+begin_src python :results output :tangle ./triangle_and_square_numbers.py
 
 def square_number(n):
     """Return the nth square number."""

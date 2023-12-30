@@ -1,0 +1,45 @@
+#+title: Exploding Dots
+
+If you have never experienced exploding dots, stop reading this and go there now: [[https://www.explodingdots.org][explodingdots.org]]. Seriously, go explore the first two Islands and then come back. I'll wait... OK, now that you are back, exploding dots is a great way of exploring +arithmetic+ mathematics in different bases. The connection between elementary school long division, and polynomial division explored in [[https://www.explodingdots.org/station/I6S13][Lesson 6.2 of Exploding Dots]] blows me away every time.
+
+Why not build exploding dots machines using python! Essentially, exploding dots is repeated division while keeping track of the remainders. Computers are fantastic at this kind of thing. We can recreate any integer machine with about 20 lines of code. This makes it a great coding activity for beginners. Bonus question: this script only works for n ∈ ℕ such that n > 1. When using a 1 ← 1 machine, the script never prints an output. What is going on here?
+
+#+begin_src python :results output :exports both :tangle ./exploding_dots.py
+def exploding_dots(number, base):
+    machine = []  # machine starts as emptylist
+    print(f"The code for {number} in a 1 <- {base} machine is:\n")
+    while number >= base:
+        explosions = number // base
+        leftoverDots = number % base
+        machine.append(leftoverDots)
+        number = explosions
+    machine.append(number)
+    for digit in reversed(
+        machine
+    ):  # the list starts with 1s digit so we have to reverse it
+        print(f"| {digit}", end=" ")
+
+
+# takes input from user and converts to integers
+# base = int(input("Enter the machine do you want to work in? "))
+# number = int(input(f"Enter a number into the 1 <- {base} machine: "))
+
+exploding_dots(13, 2)
+
+#+end_src
+
+#+RESULTS:
+: The code for 13 in a 1 <- 2 machine is:
+: 
+: | 1 | 1 | 0 | 1 
+
+
+Here is the code in action.
+
+[[./explodingdots.gif]]
+
+* Resources
+James Tanton has a ton of other great resources to check out.
+- [[https://gdaymath.com][G'day Math]]
+- [[http://www.jamestanton.com][Thinking Mathematics]]
+- [[https://www.maa.org/math-competitions/teachers/curriculum-inspirations][Problem-Solving Strategies]]
