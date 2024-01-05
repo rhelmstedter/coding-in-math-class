@@ -4,6 +4,7 @@ If you have never experienced exploding dots, stop reading this and go there now
 
 Why not build exploding dots machines using python! Essentially, exploding dots is repeated division while keeping track of the remainders. Computers are fantastic at this kind of thing. We can recreate any integer machine with about 20 lines of code. This makes it a great coding activity for beginners. Bonus question: this script only works for n ∈ ℕ such that n > 1. When using a 1 ← 1 machine, the script never prints an output. What is going on here?
 
+* Code
 #+begin_src python :results output :exports both :tangle ./exploding_dots.py
 def exploding_dots(number, base):
     machine = []  # machine starts as emptylist
@@ -33,10 +34,7 @@ exploding_dots(13, 2)
 : 
 : | 1 | 1 | 0 | 1 
 
-
-Here is the code in action.
-
-[[./explodingdots.gif]]
+[[file:exploding_dots.py][source code]]
 
 * Resources
 James Tanton has a ton of other great resources to check out.

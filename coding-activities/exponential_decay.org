@@ -1,24 +1,30 @@
-#+title: Exponential Decay(../coding-activities/simple_pie_chart.png)
+#+title: Exponential Decay
 
 The inspiration for this activity came from browsing twitter. [[https://twitter.com/BridgetDunbar/status/1367171395440943106?s=20][@BridgetDunbar]] asked, "Is there a simulator out there for flipping a lot of coins at once?" I didn't know of any that would give the count of all the heads and tails, so I coded a simple one for her.
 
-#+begin_src python
+#+begin_src python :results output
 import random
 
+
+random.seed(1)
 FLIPS = 200
 heads = 0
 tails = 0
 for flip in range(FLIPS):
-  flip = random.randint(0, 1)
-  if flip == 0:
-    heads += 1
-  else:
-    tails += 1
-    
-print("Number of heads: " + str(heads))
-print("Number of tails: " + str(tails))
+    flip = random.randint(0, 1)
+    if flip == 0:
+        heads += 1
+    else:
+        tails += 1
+
+print(f"Number of heads: {heads}")
+print(f"Number of tails: {tails}")
 
 #+end_src
+
+#+RESULTS:
+: Number of heads: 99
+: Number of tails: 101
 
 After a couple clarifying questions turns out she was trying to recreate this statistics activity.
 

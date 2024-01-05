@@ -1,26 +1,20 @@
 #+TITLE: Coding-in-Math-Class
 
+* Purpose
 This repository is designed to help math teachers bring coding into their classrooms. Even if you as the teacher have zero coding experience, you can go through the introduction below with students and learn together. I owe a lot of my own coding knowledge to kind strangers on the internet. This is an attempt to pay it forward. I am also more than happy to help however I can. 
 
 Given that I teach at a middle school, most of the activities are geared towards 8th grade CCSS. However, they can be adjusted for a wide range of grades. If you have questions, or ideas for new lessons email me <rhelmstedter@gmail.com> or find me on Twitter [[https://twitter.com/RHelmstedter][@RHelmstedter]].
 
 * Coding at School
-Since my students are all on Chromebooks, all future projects will use either [[https://trinket.io][trinket.io]], [[https://replit.com/][replit]], or [[https://youtu.be/xoo4mTujM1U][Google Colaboratory (Colab)]]. Trinket is great because the interface is intuitive, students will already be familiar with it from the intro, and you can output cool drawings using the turtle module. Unfortunately, it is only free for python 2 which has been sunsetted as of January 2020. While you can still use it, it is no longer being supported. Replit seems to be a great choice since it offers more flexibility than Trinket and is more powerful. Google Colab is a great (read: free, and still with nothing to download or install!) alternative because it integrates with Google Drive. It is built on the open-sourced Jupyter Notebook and designed for data science applications. +So, I no longer use Google Colab for two reasons. 1) Google changed the age limit to over 18. This means none of my students can access it. 2) Colab, as an app, is now controlled by the District and turned off for me. So, I have literally lost access to all my data and notebooks for my work email account.+
-** Learning to Code in Python
-*** Trinket
+Since my students are all on Chromebooks, all future projects will use either [[https://trinket.io][trinket.io]], [[https://replit.com/][replit]], or [[https://youtu.be/xoo4mTujM1U][Google Colaboratory (Colab)]].
 
-Let students explore the [[https://trinket.io][trinket.io]] intro to coding. It is web-based, with nothing to download or install. As with all great resources it has a low floor and a high ceiling. Students do not need prior coding experience. They only have to edit existing code and see how the output changes.
-+ [[https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code][A Visual Introduction to Python on Trinket.io]]
+Trinket is great because the interface is intuitive, students will already be familiar with it from the intro, and you can output cool drawings using the turtle module. Unfortunately, it is only free for python 2 which has been sunsetted as of January 2020. While you can still use it, it is no longer being supported.
 
-After a series of small challenges, students get to choose their own culminating activity. Of the entire introduction to python, this is the only thing that I would consider grading. I use it as a formative assessment for the coding. If students seem to grasp it, we move on. If not, we spend a little more time with the basics.
+Replit seems to be a great choice since it offers more flexibility than Trinket and is more powerful.
 
-That being said, students will probably need some more skills before they create programs from scratch. Trinket offers more tutorials. I also recommend checking out the other resources below to take your coding to the next level.
+Google Colab is a great (read: free, and still with nothing to download or install!) alternative because it integrates with Google Drive. It is built on the open-sourced Jupyter Notebook and designed for data science applications. I no longer use Google Colab because students can't access it on their machines.
 
-*** Replit
-[[https://www.replit.com][Replit]] is incredible.
-
-*** Addition Resources
-
+* Learning to Code in Python
 + [[https://docs.trinket.io/getting-started-with-python#/welcome/where-we-ll-go][Trinket: Python Basics]]
 + [[https://hourofpython.com/#string-challenges][Trinket: Challenges]]
 + [[https://automatetheboringstuff.com/][Automate the Boring Stuff with Python — Al Sweigart]]
@@ -31,13 +25,6 @@ That being said, students will probably need some more skills before they create
 
 Below is a collection of activities and other resources that can be used in the math classroom. All programs are written in python and executable in either Replit, Google Colab or trinket.
 
-** Math 8 CCSS
-
-+ [[file:coding-activities/Gaussian-Addition.org][Gaussian Addition]]
-+ [[file:coding-activities/silent-board-game.org][Silent Board Game]]
-+ [[file:coding-activities/string-art.org][String Art]]
-+ [[file:coding-activities/triangle_and_square_numbers.org][Triangle and Square numbers]]
- 
 ** Math 7 CCSS
 
 + [[file:./coding-activities/dice_simulation.org][Dice Sumulation]]
@@ -46,12 +33,19 @@ Below is a collection of activities and other resources that can be used in the 
 + [[file:.//coding-activities/experimental-probability.org][Experimental Probability]]
 + [[file:./coding-activities/dnd_advantage.org][DnD Advantage]]
 
+** Math 8 CCSS
+
++ [[file:coding-activities/Gaussian-Addition.org][Gaussian Addition]]
++ [[file:coding-activities/silent-board-game.org][Silent Board Game]]
++ [[file:coding-activities/string-art.org][String Art]]
++ [[file:coding-activities/triangle_and_square_numbers.org][Triangle and Square numbers]]
+ 
 ** Recreational Math
 
 + [[file:./coding-activities/Collatz-Conjecture.org][Collatz Conjecture]]
 + [[file:./coding-activities/Sieve-of-Eratosthenes.org][Sieve of Eratosthenes]]
 + [[file:./coding-activities/Spirolateral-Math-Doodles.org][Spirolateral Math Doodles]]
-+ [[file:./coding-activities/Exponential-Decay.org][Exponential Decay]]
++ [[file:coding-activities/exponential_decay.org][Exponential Decay]]
 + [[file:coding-activities/exploding_dots.org][Exploding Dots]]
 
 ** Data Science
