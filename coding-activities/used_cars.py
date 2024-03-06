@@ -42,4 +42,4 @@ with open("used_cars.csv", mode="w") as used_car_db:
             ]
         except AttributeError:
             pass
-        car_writer.writerow({fn: f for fn, f in zip(fieldnames, fields)})
+        # car_writer.writerow({fn: f for fn, f in zip(fieldnames, fields)})

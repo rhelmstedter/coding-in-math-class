@@ -28,19 +28,16 @@ Here is the [[file:used_cars.py][full Script]].
 * A Breakdown of the Code
 
 ** The Imports
-
 #+begin_src python exports: code
-
 import requests
 import json
 from bs4 import BeautifulSoup
 import csv
-from pprint import pprint as pp
 #+end_src
+We need to scrape the website and then parse the html. Nothing better than ~requests~ and ~bs4~ for that. After parsing the html, I used ~json~ to convert from the html data to a python dictionary. Finally, I saved the data in a csv file so we can open it in google sheets.
 
 
 ** The Soup
-
 #+begin_src python exports: code
 URL = "https://www.autotrader.com/cars-for-sale/ventura-ca?newSearch=false&numRecords=100&zip=93001"
 page = requests.get(URL)
@@ -49,7 +46,60 @@ soup = BeautifulSoup(page.content, "html.parser")
 cars = soup.find_all("div", class_="col-xs-12 display-flex col-sm-4")
 #+end_src
 
+This url gives us the first 100 cars available in our zip code. Next we made the soup. We found that every car on the website was saved in that crazy looking class ~"col-xs-12 display-flex col-sm-4"~. So using the ~find_all~ method returned a list of all of the cars.
+
+** Sample Car
+This part took awhile. We had to visually parse the json and figure out what information we wanted. Using pretty printing, we got this:
+#+begin_src python
+{'@context': 'http://schema.org/',
+ '@type': ['Product', 'Car'],
+ 'brand': {'@context': 'http://schema.org/',
+           '@type': 'Brand',
+           'name': {'code': 'MB', 'name': 'Mercedes-Benz'}},
+ 'color': 'Gold',
+ 'description': 'Location: Ventura, CA. This 1992 [object Object] [object '
+                'Object] is listed for $4495',
+ 'driveWheelConfiguration': '2 Wheel Drive - Rear',
+ 'fuelEfficiency': '13 City / 17 Highway',
+ 'fuelType': {'code': 'G', 'group': 'Gas', 'name': 'Gasoline'},
+ 'image': 'https://assets.cai-media-management.com/ps-vehicle-media/297f5e02-cffc-428c-b867-9bce40ea9151.jpg',
+ 'manufacturer': {'@context': 'http://schema.org/',
+                  '@type': 'Organization',
+                  'name': {'code': 'MB', 'name': 'Mercedes-Benz'}},
+ 'mileageFromOdometer': {'@type': 'QuantitativeValue', 'value': '101,700'},
+ 'model': {'code': '500SL', 'name': '500 SL'},
+ 'mpn': 'Used 1992 Mercedes-Benz 500 SL',
+ 'name': 'Used 1992 Mercedes-Benz 500 SL',
+ 'offers': {'@type': 'Offer',
+            'availability': 'http://schema.org/InStock',
+            'itemCondition': 'http://schema.org/UsedCondition',
+            'price': 4495,
+            'priceCurrency': 'USD',
+            'seller': {'@context': 'http://schema.org/',
+                       '@type': 'AutoDealer',
+                       'address': {'@context': 'http://schema.org/',
+                                   '@type': 'PostalAddress',
+                                   'addressLocality': 'Ventura',
+                                   'addressRegion': 'CA',
+                                   'postalCode': '93001',
+                                   'streetAddress': ''},
+                       'name': 'Private Seller Exchange',
+                       'telephone': ''},
+            'url': 'https://www.autotrader.com/cars-for-sale/vehicle/708536463'},
+ 'productionDate': 1992,
+ 'sku': 708536463,
+ 'url': 'https://www.autotrader.com/cars-for-sale/vehicle/708536463',
+ 'vehicleEngine': '8-Cylinder',
+ 'vehicleIdentificationNumber': 'WDBFA66E4NF053333',
+ 'vehicleInteriorColor': 'Tan',
+ 'vehicleTransmission': '4-Speed Automatic'}
+#+end_src
+
+We decided to pull the following information, ~["brand", "model", "color", "mpg", "fuel_type", "full_name", "price", "mileage", "year"]~.
+
 ** The CSV File
+This became our fieldnames when we wrote to a csv file. We looped over the list return from ~soup.find_all(...)~. For each item we try to pull out all of the information. Some of the cars were either poorly formatted on the website, so we had to use a try/except block incase we got an ~AttributeError~. Finally, we used a dicitionary comprehension to write the data to the appropriate fieldname.
+
 #+begin_src python exports: code
 with open("used_cars.csv", mode="w") as used_car_db:
     fieldnames = [
@@ -64,10 +114,9 @@ with open("used_cars.csv", mode="w") as used_car_db:
         "year",
     ]
     car_writer = csv.DictWriter(used_car_db, fieldnames=fieldnames)
-    for car in cars[:3]:
+    for car in cars:
         try:
             car_data = json.loads(car.find("script").text)
-            pp(car_data)
             fields = [
                 car_data["brand"]["name"]["name"],  # brand
                 car_data["model"]["name"],  # model
@@ -83,6 +132,9 @@ with open("used_cars.csv", mode="w") as used_car_db:
             pass
         car_writer.writerow({fn: f for fn, f in zip(fieldnames, fields)})
 #+end_src
+
+You can see the orginal [[file:used_cars.csv][csv file]].
+
 
 * Putting it in Google Sheets
 Next we made a data dashboard using google sheets.
