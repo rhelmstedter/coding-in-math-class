@@ -2,10 +2,10 @@
 #+author: Russell Helmstedter
 #+date: <2024-03-06 Wed>
 
-* Used Car Data
+* The Original Problem
 The inspiration for this came from the following problem from [[http://cpm.org][CPM]].
 
-HOW MUCH IS THAT CAR?
+*HOW MUCH IS THAT CAR?*
 
 Nate and Rick were discussing cars again.  Nate claimed that cars with low odometer readings were more expensive than cars with higher odometer readings.  His evidence was that his car with 23,000 miles was worth more than Rick's car with 31,000 miles. To investigate Nate's claim, the boys collected data from several car advertisements and found the information in the table at right. Does the information in the table support Nate's claim?  That is, do you believe Nate's claim that cars with a lower odometer reading cost more money?
 
@@ -26,30 +26,38 @@ I like this problem, but I thought it would be nicer to use actual data. So I bu
 Here is the [[file:used_cars.py][full Script]].
 
 * A Breakdown of the Code
+Unfortunately, the school district where I work blocks the inspect tool so students can't actually write this code with me. As a result, I ended up writing the webscraper myself and walked the students through the design choices I made.
 
 ** The Imports
+We needed to scrape the website and then parse the html. Nothing better than ~requests~ and ~bs4~ for that. After parsing the html, we used ~json~ to convert from the html data to a python dictionary. Finally, we saved the data in a csv file so we can open it in google sheets.
+
 #+begin_src python exports: code
 import requests
 import json
 from bs4 import BeautifulSoup
 import csv
 #+end_src
-We need to scrape the website and then parse the html. Nothing better than ~requests~ and ~bs4~ for that. After parsing the html, I used ~json~ to convert from the html data to a python dictionary. Finally, I saved the data in a csv file so we can open it in google sheets.
+
 
 
 ** The Soup
+This url gaves us the first 100 cars available in our zip code. So we cal the ~requests.get()~ method.
+
 #+begin_src python exports: code
 URL = "https://www.autotrader.com/cars-for-sale/ventura-ca?newSearch=false&numRecords=100&zip=93001"
 page = requests.get(URL)
+#+end_src
 
+Next we made the soup. This part took awhile. We found that every car on the website was saved in that crazy looking class ~"col-xs-12 display-flex col-sm-4"~ . So using the ~find_all~ method returned a list of all of the cars.
+
+#+Begin_src python exports: code
 soup = BeautifulSoup(page.content, "html.parser")
 cars = soup.find_all("div", class_="col-xs-12 display-flex col-sm-4")
 #+end_src
 
-This url gives us the first 100 cars available in our zip code. Next we made the soup. We found that every car on the website was saved in that crazy looking class ~"col-xs-12 display-flex col-sm-4"~. So using the ~find_all~ method returned a list of all of the cars.
-
 ** Sample Car
-This part took awhile. We had to visually parse the json and figure out what information we wanted. Using pretty printing, we got this:
+We had to visually parse the json and figure out what information we wanted. Using pretty printing, we got this:
+
 #+begin_src python
 {'@context': 'http://schema.org/',
  '@type': ['Product', 'Car'],
