@@ -141,8 +141,18 @@ with open("used_cars.csv", mode="w") as used_car_db:
         car_writer.writerow({fn: f for fn, f in zip(fieldnames, fields)})
 #+end_src
 
-You can see the orginal [[file:used_cars.csv][csv file]].
+The full [[file:used_cars.csv][csv file]] is included in the repo as well.
 
 
 * Putting it in Google Sheets
-Next we made a data dashboard using google sheets.
+Next we made a [[https://docs.google.com/spreadsheets/d/1VEYTMBuIWFt2X5XopD38vzNOdpNpxNt0ubLgfhLMj_8/edit?usp=sharing][data dashboard]] using google sheets. We settling on creating the following Graphs.
+
+| Data            | Chart Type     |
+|-----------------+----------------|
+| Make            | Horizontal Bar |
+| Color           | Horizontal Bar |
+| Average MPG     | Historgram     |
+| Engine Type     | Pie            |
+| Miles vs. Price | Scatter Plot   |
+
+We did explore some other relationships like Year vs Price, and MPG vs Price, but there was no relationship.
