@@ -21,7 +21,7 @@ Nate and Rick were discussing cars again.  Nate claimed that cars with low odome
 | 99,000           | 10,000 |
 | 99,000           | 13,000 |
 
-I like this problem, but I thought it would be nicer to use actual data. So I built a webscaper for [[https://www.autotrader.com][Autotrader.com]].
+I like this problem, but I thought it would be nicer to use actual data. So I decided we should use python to build a webscaper for [[https://www.autotrader.com][Autotrader.com]].
 
 Here is the [[file:used_cars.py][full Script]].
 
