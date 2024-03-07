@@ -25,7 +25,7 @@ with open("used_cars.csv", mode="w") as used_car_db:
         "year",
     ]
     car_writer = csv.DictWriter(used_car_db, fieldnames=fieldnames)
-    for car in cars[:3]:
+    for car in cars:
         try:
             car_data = json.loads(car.find("script").text)
             pp(car_data)
