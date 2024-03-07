@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
-import requests
 import json
-from bs4 import BeautifulSoup
 import csv
-from pprint import pprint as pp
+
+import requests
+
+from bs4 import BeautifulSoup
 
 
 URL = "https://www.autotrader.com/cars-for-sale/ventura-ca?newSearch=false&numRecords=100&zip=93001"
@@ -28,7 +29,6 @@ with open("used_cars.csv", mode="w") as used_car_db:
     for car in cars:
         try:
             car_data = json.loads(car.find("script").text)
-            pp(car_data)
             fields = [
                 car_data["brand"]["name"]["name"],  # brand
                 car_data["model"]["name"],  # model
