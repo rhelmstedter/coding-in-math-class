@@ -26,7 +26,6 @@ Google Colab is a great (read: free, and still with nothing to download or insta
 Below is a collection of activities and other resources that can be used in the math classroom. All programs are written in python and executable in either Replit, Google Colab or trinket.
 
 ** Math 7 CCSS
-
 + [[file:./coding-activities/dice_simulation.org][Dice Sumulation]]
 + [[file:.//coding-activities/order-of-operations.org][Order of Operations]]
 + [[file:.//coding-activities/guess-my-number-games.org][Guess My Number Games]]
@@ -34,14 +33,12 @@ Below is a collection of activities and other resources that can be used in the 
 + [[file:./coding-activities/dnd_advantage.org][DnD Advantage]]
 
 ** Math 8 CCSS
-
 + [[file:coding-activities/Gaussian-Addition.org][Gaussian Addition]]
 + [[file:coding-activities/silent-board-game.org][Silent Board Game]]
 + [[file:coding-activities/string-art.org][String Art]]
 + [[file:coding-activities/triangle_and_square_numbers.org][Triangle and Square numbers]]
  
 ** Recreational Math
-
 + [[file:./coding-activities/Collatz-Conjecture.org][Collatz Conjecture]]
 + [[file:./coding-activities/Sieve-of-Eratosthenes.org][Sieve of Eratosthenes]]
 + [[file:./coding-activities/Spirolateral-Math-Doodles.org][Spirolateral Math Doodles]]
@@ -49,6 +46,5 @@ Below is a collection of activities and other resources that can be used in the 
 + [[file:coding-activities/exploding_dots.org][Exploding Dots]]
 
 ** Data Science
-
 + [[file:./coding-activities/data-vis-kaggle.org][Data Visualization with Kaggle]]
 + [[file:./coding-activities/simple_pie_chart.org][Simple Pie Chart]]

@@ -12,12 +12,12 @@ While I will probably do that again this year, I will also include a coding comp
 while True:
     num = int(input("What is my number? "))
     result = 11
-    steps = 3*(num) + 5
+    steps = 3 * (num) + 5
     if steps == result:
-        print('Noice!')
+        print("Noice!")
         break
-    else: 
-        print("That's not my number. Try again."
+    else:
+        print("That's not my number. Try again.")
 #+end_src
 
 Here it is in action in a google colab notebook.
