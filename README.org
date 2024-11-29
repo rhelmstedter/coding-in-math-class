@@ -37,6 +37,7 @@ Below is a collection of activities and other resources that can be used in the 
 + [[file:coding-activities/silent-board-game.org][Silent Board Game]]
 + [[file:coding-activities/string-art.org][String Art]]
 + [[file:coding-activities/triangle_and_square_numbers.org][Triangle and Square numbers]]
++ [[file:coding-activities/used_cars.org][Used Car Data]]
  
 ** Recreational Math
 + [[file:./coding-activities/Collatz-Conjecture.org][Collatz Conjecture]]
