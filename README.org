@@ -31,6 +31,7 @@ Below is a collection of activities and other resources that can be used in the 
 + [[file:.//coding-activities/guess-my-number-games.org][Guess My Number Games]]
 + [[file:.//coding-activities/experimental-probability.org][Experimental Probability]]
 + [[file:./coding-activities/dnd_advantage.org][DnD Advantage]]
++ Go Fish
 
 ** Math 8 CCSS
 + [[file:coding-activities/Gaussian-Addition.org][Gaussian Addition]]

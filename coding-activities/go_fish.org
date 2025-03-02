@@ -1,0 +1,4 @@
+if __name__ == '__main__':
+        calc_theoretical_prob()
+        print()
+        calc_exp_prob(1000000)
