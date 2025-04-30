@@ -1,0 +1,12 @@
+#+title: Paper Pool
+#+date: [2025-04-29 Tue]
+#+author: Russell Helmstedter
+
+* The Problem
+:#+attr_html: :alt  :align left :class img
+[[./paper_pool.png][paper pool]]
+
+
+* Script
+[[file:paper_pool.py][paper_pool.py]]
+test_paper_pool.py
