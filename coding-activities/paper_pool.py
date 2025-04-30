@@ -62,6 +62,24 @@ def simulation(table, base, height):
     print(f"Number of rebounds: {rebounds}")
 
 
+def count_rebounds(base, height):
+    CORNERS = ((base, 0), (0, height), (base, height))
+    direction = SOUTHEAST
+    x, y = (1, 1)
+    rebounds = 0
+    while True:
+        if y == 0 or y == height:
+            direction = direction_change_from_base[direction]
+            rebounds += 1
+        elif x == 0 or x == base:
+            direction = direction_change_from_height[direction]
+            rebounds += 1
+        x, y = x + direction[0], y + direction[1]
+        if (x, y) in CORNERS:
+            break
+    return rebounds
+
+
 if __name__ == "__main__":
     base = int(input("Enter the base: "))
     height = int(input("Enter the height: "))
