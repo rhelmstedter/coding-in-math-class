@@ -3,9 +3,8 @@
 #+author: Russell Helmstedter
 
 * The Problem
-:#+attr_html: :alt  :align left :class img
-[[./paper_pool.png][paper pool]]
-
+#+CAPTION: Paper Pool Screenshot from CPM
+[[./paper_pool.png]]
 
 * Script
 + [[file:paper_pool.py][paper_pool.py]]
