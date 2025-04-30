@@ -39,7 +39,7 @@ Below is a collection of activities and other resources that can be used in the 
 + [[file:coding-activities/string-art.org][String Art]]
 + [[file:coding-activities/triangle_and_square_numbers.org][Triangle and Square numbers]]
 + [[file:coding-activities/used_cars.org][Used Car Data]]
-+ Paper Pool
++ [[file:coding-activities/paper_pool.org][Paper Pool]]
  
 ** Recreational Math
 + [[file:./coding-activities/Collatz-Conjecture.org][Collatz Conjecture]]
